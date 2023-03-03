@@ -1,8 +1,7 @@
 <h1>Criando um relogio com contagem regressiva</h1>
 
 ## Definir a interface do relogio
-<p> </p> 
-   ### Mostrar Dias, Horas, Minutos e Segundo
+<p>Mostrar Dias, Horas, Minutos e Segundo</p> 
 
 ## Definir estilo do relogio
 <p> </p>
@@ -11,4 +10,4 @@
 
 ## Definir interacao com o usuario
 
-   ### Usuario devera inputar quanto tempo deseja regredir
+   <p>Usuario devera inputar quanto tempo deseja regredir</p>
