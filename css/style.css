@@ -33,3 +33,15 @@ body{
     font-size: 20px;
 
 }
+
+.botoes{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    height: 30px;
+    width: 600px;
+    background: transparent;
+    border-radius: 35px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0.5);
+    
+}
