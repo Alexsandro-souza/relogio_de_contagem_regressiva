@@ -1,4 +1,6 @@
 const clickStart = document.getElementById('btn-start');  //Caputei o botão no html
+const clickPause = document.getElementById('btn-pause');  //Caputei o botão no html
+const clickReset = document.getElementById('btn-reset');  //Caputei o botão no html
 
 // Criei uma função após um evento "Click no botão start"
 clickStart.addEventListener('click', () => {
@@ -8,14 +10,14 @@ clickStart.addEventListener('click', () => {
 
   let duracao = (parseInt(horas.value) * 60 * 60) + (parseInt(minutos.value) * 60) + parseInt(segundos.value);
 
-  visualizarTemporizador = document.getElementById('temporizador');
+  visualizarTemporizador = document.getElementById('timer');
   
   timer1(duracao, visualizarTemporizador);
 })
 
-//clickPause.addEventListener('click', () => {
-  //alert("oi")
-//})
+clickPause.addEventListener('click', () => {
+  clearInterval(interval)
+})
 
 //clickReset.addEventListener('click', () => {
   //clearInterval(interval);
@@ -38,7 +40,7 @@ const timer1 = (duracao, visualizarTemporizador) => {
     minutos1 = minutos < 10 ? '0' + minutos : minutos;
     segundos1 = segundos < 10 ? '0' + segundos : segundos;
 
-    visualizarTemporizador.innerHTML = horas1+minutos1+segundos1;
+    visualizarTemporizador.innerHTML = horas1 + ":" + minutos1 + ":" +segundos1;
     tempo -= 1;
 
     if(timer < 0){
