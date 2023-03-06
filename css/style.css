@@ -23,25 +23,39 @@ body{
     box-shadow: 0px 8px 10px rgba(0, 0, 0.5);
     
 }
-.relogio div{
-    height: 170px;
-    width: 150px;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    letter-spacing: 5px;
-    font-size: 20px;
+
+label{
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+input{
+    font-size:25px;
+    background:transparent;
+    box-shadow:transparent;
+    border-color: transparent;
 
 }
 
-.botoes{
+.temporizador{
+    font-size: 65px;
+    justify-content: center;
+    
+}
+
+.input-container{
+    margin: 10px;
+}
+
+.align-inputs{
     display: flex;
-    align-items:center;
-    justify-content: space-around;
-    height: 30px;
-    width: 600px;
-    background: transparent;
-    border-radius: 35px;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0.5);
+    justify-content: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
+    text-align: center;
     
 }
